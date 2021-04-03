@@ -1,6 +1,15 @@
 use <MCAD/shapes.scad>
 
-// makita 3709 plate is attached by four screws
+// makita 3709
+// guide for following linear part
+guide_size=38;
+
+guide_diameter=10;
+guide_height=10;
+guide_spacing=guide_size+guide_diameter;
+
+
+// plate is attached by four screws
 // 90x80mm square plate
 // attached by four screws in square pattern with 70x60mm pattern
 
@@ -19,11 +28,6 @@ main_hole_offset=4;
 air_guide_diameter=20;
 
 notch_length=28;
-
-guide_size=30;
-guide_diameter=10;
-guide_height=10;
-guide_spacing=guide_size+guide_diameter;
 
 screw_layout=[
     [-screw_layout_length/2,-screw_layout_width/2],
